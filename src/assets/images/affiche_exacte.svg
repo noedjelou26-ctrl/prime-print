@@ -1,0 +1,364 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" width="100%" height="100%">
+  <defs>
+    <!-- Gradients -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="50%" stop-color="#f8fafc"/>
+      <stop offset="100%" stop-color="#f1f5f9"/>
+    </linearGradient>
+
+    <linearGradient id="brushBlue" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0a467e"/>
+      <stop offset="50%" stop-color="#1062a4"/>
+      <stop offset="100%" stop-color="#0a467e"/>
+    </linearGradient>
+
+    <linearGradient id="magentaGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#d81159"/>
+      <stop offset="100%" stop-color="#ee1c6e"/>
+    </linearGradient>
+
+    <linearGradient id="cyanGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0088cc"/>
+      <stop offset="100%" stop-color="#00a5df"/>
+    </linearGradient>
+
+    <linearGradient id="blueGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0d4c82"/>
+      <stop offset="100%" stop-color="#1062a4"/>
+    </linearGradient>
+
+    <!-- Ring Gradient for Machine Showcase -->
+    <linearGradient id="ringGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00a5df"/>
+      <stop offset="40%" stop-color="#1062a4"/>
+      <stop offset="80%" stop-color="#ee1c6e"/>
+      <stop offset="100%" stop-color="#ff0055"/>
+    </linearGradient>
+
+    <!-- Shadow filter -->
+    <filter id="dropShadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="2" dy="4" stdDeviation="4" flood-opacity="0.25"/>
+    </filter>
+    <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- Background White with Subtle Wave Lines -->
+  <rect width="1000" height="1000" fill="url(#bgGrad)" />
+  <path d="M 0,200 C 300,100 700,300 1000,150 L 1000,0 L 0,0 Z" fill="#f8fafc" opacity="0.6"/>
+  <path d="M 0,600 C 400,450 600,750 1000,500 L 1000,1000 L 0,1000 Z" fill="#f8fafc" opacity="0.5"/>
+
+  <!-- ================= TOP HEADER ================= -->
+  
+  <!-- Adobe Illustrator Icon (Ai) -->
+  <g transform="translate(45, 50)" filter="url(#dropShadow)">
+    <rect width="85" height="85" rx="22" fill="#2d1b00" stroke="#ff9a00" stroke-width="2.5"/>
+    <text x="42.5" y="58" font-family="'Syne', 'Montserrat', sans-serif" font-size="44" font-weight="900" fill="#ff9a00" text-anchor="middle">Ai</text>
+  </g>
+
+  <!-- Paint Dots near Ai -->
+  <circle cx="145" cy="40" r="7" fill="#00a5df" />
+  <circle cx="160" cy="55" r="4" fill="#ee1c6e" />
+  <circle cx="130" cy="145" r="5" fill="#ee1c6e" />
+  <circle cx="28" cy="400" r="5" fill="#00a5df" />
+
+  <!-- Main Splash Header "Eliano PRIME PRINT" -->
+  <g transform="translate(180, 30)">
+    <!-- Brush banner background -->
+    <path d="M 10,25 Q 50,0 200,8 Q 450,-5 580,20 Q 610,60 595,110 Q 620,150 560,170 Q 300,185 80,165 Q 10,140 25,90 Z" fill="url(#brushBlue)" filter="url(#dropShadow)"/>
+    <!-- Brush spatter lines -->
+    <line x1="0" y1="35" x2="30" y2="35" stroke="#1062a4" stroke-width="4" stroke-linecap="round"/>
+    <line x1="575" y1="40" x2="615" y2="40" stroke="#1062a4" stroke-width="4" stroke-linecap="round"/>
+    <line x1="560" y1="140" x2="605" y2="140" stroke="#1062a4" stroke-width="5" stroke-linecap="round"/>
+    <line x1="15" y1="125" x2="45" y2="125" stroke="#1062a4" stroke-width="4" stroke-linecap="round"/>
+
+    <!-- "Eliano" Text Box (White text with pink rounded border) -->
+    <g transform="translate(160, 18)">
+      <rect x="0" y="0" width="250" height="60" rx="10" fill="#ffffff" stroke="#ee1c6e" stroke-width="5"/>
+      <text x="125" y="44" font-family="'Syne', 'Montserrat', Arial Black, sans-serif" font-size="42" font-weight="900" fill="#ee1c6e" text-anchor="middle" letter-spacing="1">Eliano</text>
+    </g>
+
+    <!-- "PRIME PRINT" Bold Text -->
+    <text x="310" y="145" font-family="'Syne', 'Montserrat', Arial Black, sans-serif" font-size="58" font-weight="900" fill="#ffffff" text-anchor="middle" letter-spacing="3" filter="url(#dropShadow)">PRIME PRINT</text>
+  </g>
+
+  <!-- Top Right Graphics: Mouse, Photoshop Ps, Green Tool -->
+  <g transform="translate(760, 40)">
+    <!-- Computer Mouse -->
+    <ellipse cx="140" cy="50" rx="75" ry="42" fill="#334155" transform="rotate(-15 140 50)" filter="url(#dropShadow)"/>
+    <path d="M 80,45 Q 140,25 190,40" stroke="#00ff88" stroke-width="4" fill="none" transform="rotate(-15 140 50)"/>
+    <circle cx="135" cy="40" r="6" fill="#00ff88"/>
+
+    <!-- Photoshop (Ps) Icon -->
+    <g transform="translate(-10, 130)" filter="url(#dropShadow)">
+      <circle cx="45" cy="45" r="40" fill="#031626" stroke="#00c8ff" stroke-width="2"/>
+      <text x="45" y="58" font-family="'Syne', 'Montserrat', sans-serif" font-size="38" font-weight="900" fill="#00c8ff" text-anchor="middle">Ps</text>
+    </g>
+
+    <!-- Green 3D Pen / Cutter Tool -->
+    <g transform="translate(90, 95)" filter="url(#dropShadow)">
+      <circle cx="45" cy="45" r="38" fill="#15803d" />
+      <path d="M 30,55 L 50,30 L 60,35 L 42,62 Z" fill="#ffffff"/>
+      <path d="M 26,60 L 32,54 L 38,62 Z" fill="#86efac"/>
+    </g>
+  </g>
+
+  <!-- ================= CENTER LOGO (EPP 3 DROPLETS) ================= -->
+  <g transform="translate(365, 230)" filter="url(#dropShadow)">
+    <!-- Droplet 1 (Left - Cyan - E) -->
+    <g transform="translate(0, 0)">
+      <path d="M 40,0 C 40,0 80,45 80,75 C 80,98 62,115 40,115 C 18,115 0,98 0,75 C 0,45 40,0 40,0 Z" fill="#00a5df"/>
+      <circle cx="40" cy="75" r="26" fill="#0077aa" opacity="0.3"/>
+      <text x="40" y="87" font-family="'Syne', 'Montserrat', sans-serif" font-size="36" font-weight="900" fill="#ffffff" text-anchor="middle">E</text>
+      <path d="M 28,30 Q 38,20 40,10" stroke="#ffffff" stroke-width="3" stroke-linecap="round" fill="none" opacity="0.8"/>
+    </g>
+
+    <!-- Droplet 2 (Center - Blue - P) -->
+    <g transform="translate(68, -15)">
+      <path d="M 45,0 C 45,0 90,50 90,85 C 90,110 70,130 45,130 C 20,130 0,110 0,85 C 0,50 45,0 45,0 Z" fill="#1062a4"/>
+      <circle cx="45" cy="85" r="28" fill="#0a3f6b" opacity="0.3"/>
+      <text x="45" y="98" font-family="'Syne', 'Montserrat', sans-serif" font-size="40" font-weight="900" fill="#ffffff" text-anchor="middle">P</text>
+      <path d="M 32,35 Q 42,25 45,12" stroke="#ffffff" stroke-width="3.5" stroke-linecap="round" fill="none" opacity="0.8"/>
+    </g>
+
+    <!-- Droplet 3 (Right - Magenta - P) -->
+    <g transform="translate(142, 0)">
+      <path d="M 40,0 C 40,0 80,45 80,75 C 80,98 62,115 40,115 C 18,115 0,98 0,75 C 0,45 40,0 40,0 Z" fill="#ee1c6e"/>
+      <circle cx="40" cy="75" r="26" fill="#aa0e4a" opacity="0.3"/>
+      <text x="40" y="87" font-family="'Syne', 'Montserrat', sans-serif" font-size="36" font-weight="900" fill="#ffffff" text-anchor="middle">P</text>
+      <path d="M 28,30 Q 38,20 40,10" stroke="#ffffff" stroke-width="3" stroke-linecap="round" fill="none" opacity="0.8"/>
+    </g>
+
+    <!-- Bottom Text under droplets -->
+    <g transform="translate(10, 132)">
+      <rect x="0" y="0" width="70" height="24" rx="12" fill="none" stroke="#00a5df" stroke-width="2"/>
+      <text x="35" y="17" font-family="'Syne', sans-serif" font-size="13" font-weight="700" fill="#00a5df" text-anchor="middle">Eliano</text>
+
+      <rect x="78" y="0" width="70" height="24" rx="12" fill="none" stroke="#1062a4" stroke-width="2"/>
+      <text x="113" y="17" font-family="'Syne', sans-serif" font-size="13" font-weight="700" fill="#1062a4" text-anchor="middle">Prime</text>
+
+      <rect x="156" y="0" width="65" height="24" rx="12" fill="none" stroke="#ee1c6e" stroke-width="2"/>
+      <text x="188" y="17" font-family="'Syne', sans-serif" font-size="13" font-weight="700" fill="#ee1c6e" text-anchor="middle">Print</text>
+    </g>
+  </g>
+
+
+  <!-- ================= LEFT COLUMN: SERVICES & 3 BADGES ================= -->
+  
+  <!-- "SERVICES" Grunge Stamp -->
+  <g transform="translate(60, 250)">
+    <!-- Slanted Red/Magenta Brush Badge -->
+    <g transform="rotate(-15 100 40)">
+      <path d="M 0,20 Q 30,5 110,12 Q 190,8 215,25 Q 230,60 210,80 Q 120,95 10,80 Q -10,50 0,20 Z" fill="#ee1c6e" filter="url(#dropShadow)"/>
+      <text x="110" y="58" font-family="'Syne', 'Montserrat', Arial Black, sans-serif" font-size="34" font-weight="900" fill="#ffffff" text-anchor="middle" letter-spacing="4">SERVICES</text>
+    </g>
+    <!-- Dots around services -->
+    <circle cx="210" cy="15" r="4" fill="#00a5df"/>
+    <circle cx="230" cy="30" r="6" fill="#ee1c6e"/>
+    <circle cx="20" cy="110" r="5" fill="#1062a4"/>
+  </g>
+
+  <!-- BADGE 01: INFOGRAPHIE (Magenta) -->
+  <g transform="translate(50, 440)" filter="url(#dropShadow)">
+    <!-- Left Circle 01 -->
+    <path d="M 20,40 L 70,0 L 120,40 L 70,80 Z" fill="#ffffff" stroke="#ee1c6e" stroke-width="4" />
+    <circle cx="70" cy="40" r="34" fill="#0f172a"/>
+    <text x="70" y="53" font-family="'Syne', 'Montserrat', sans-serif" font-size="32" font-weight="900" fill="#ffffff" text-anchor="middle">01</text>
+    
+    <!-- Main Banner Pill -->
+    <rect x="110" y="5" width="410" height="70" rx="35" fill="url(#magentaGrad)" stroke="#ee1c6e" stroke-width="4"/>
+    <text x="315" y="53" font-family="'Syne', 'Montserrat', Arial Black, sans-serif" font-size="38" font-weight="900" fill="#ffffff" text-anchor="middle" letter-spacing="3">INFOGRAPHIE</text>
+
+    <!-- Outer contour outline nodes -->
+    <path d="M 90,8 L 500,8 Q 535,8 535,40 Q 535,72 500,72 L 90,72" fill="none" stroke="#ee1c6e" stroke-width="3" stroke-dasharray="400" stroke-dashoffset="0"/>
+    <circle cx="430" cy="72" r="5" fill="#ee1c6e"/>
+  </g>
+
+  <!-- BADGE 02: IMPRIMERIE (Cyan) -->
+  <g transform="translate(50, 580)" filter="url(#dropShadow)">
+    <!-- Main Banner Pill -->
+    <rect x="20" y="5" width="410" height="70" rx="35" fill="url(#cyanGrad)" stroke="#00a5df" stroke-width="4"/>
+    <text x="225" y="53" font-family="'Syne', 'Montserrat', Arial Black, sans-serif" font-size="38" font-weight="900" fill="#ffffff" text-anchor="middle" letter-spacing="3">IMPRIMERIE</text>
+
+    <!-- Right Circle 02 -->
+    <g transform="translate(390, 0)">
+      <path d="M 20,40 L 70,0 L 120,40 L 70,80 Z" fill="#ffffff" stroke="#00a5df" stroke-width="4" />
+      <circle cx="70" cy="40" r="34" fill="#0f172a"/>
+      <text x="70" y="53" font-family="'Syne', 'Montserrat', sans-serif" font-size="32" font-weight="900" fill="#ffffff" text-anchor="middle">02</text>
+    </g>
+
+    <!-- Connecting line & dots -->
+    <path d="M 30,8 L 410,8" stroke="#00a5df" stroke-width="3" fill="none"/>
+    <circle cx="110" cy="8" r="5" fill="#00a5df"/>
+    <circle cx="340" cy="72" r="5" fill="#00a5df"/>
+  </g>
+
+  <!-- BADGE 03: SERIGRAPHIE (Deep Blue) -->
+  <g transform="translate(50, 720)" filter="url(#dropShadow)">
+    <!-- Left Circle 03 -->
+    <path d="M 20,40 L 70,0 L 120,40 L 70,80 Z" fill="#ffffff" stroke="#1062a4" stroke-width="4" />
+    <circle cx="70" cy="40" r="34" fill="#0f172a"/>
+    <text x="70" y="53" font-family="'Syne', 'Montserrat', sans-serif" font-size="32" font-weight="900" fill="#ffffff" text-anchor="middle">03</text>
+
+    <!-- Main Banner Pill -->
+    <rect x="110" y="5" width="410" height="70" rx="35" fill="url(#blueGrad)" stroke="#1062a4" stroke-width="4"/>
+    <text x="315" y="53" font-family="'Syne', 'Montserrat', Arial Black, sans-serif" font-size="38" font-weight="900" fill="#ffffff" text-anchor="middle" letter-spacing="3">SERIGRAPHIE</text>
+
+    <!-- Outer contour outline nodes -->
+    <circle cx="410" cy="72" r="5" fill="#1062a4"/>
+    <circle cx="170" cy="72" r="5" fill="#1062a4"/>
+  </g>
+
+
+  <!-- ================= BOTTOM LEFT: CONTACT INFORMATIONS ================= -->
+  <g transform="translate(20, 855)">
+    <!-- Phone / WhatsApp -->
+    <g transform="translate(0, 0)">
+      <!-- WhatsApp Green Icon -->
+      <circle cx="20" cy="20" r="18" fill="#25D366" filter="url(#dropShadow)"/>
+      <path d="M 13,24 Q 13,20 16,16 Q 19,13 23,13 Q 27,13 29,16 Q 31,19 28,24 Q 25,28 20,28 L 13,29 L 14,24 Z" fill="#ffffff"/>
+      <text x="48" y="28" font-family="'Syne', 'Montserrat', Arial Black, sans-serif" font-size="36" font-weight="900" fill="#000000" letter-spacing="1">90 26 36 00</text>
+    </g>
+
+    <!-- Email -->
+    <g transform="translate(0, 50)">
+      <!-- Gmail Icon -->
+      <rect x="5" y="7" width="30" height="24" rx="4" fill="#ffffff" stroke="#ea4335" stroke-width="3"/>
+      <path d="M 5,7 L 20,19 L 35,7" stroke="#ea4335" stroke-width="3" fill="none"/>
+      <text x="48" y="26" font-family="'Syne', 'Montserrat', sans-serif" font-size="28" font-weight="900" fill="#000000">elianoprimeprint@gmail.com</text>
+    </g>
+
+    <!-- Address / Location -->
+    <g transform="translate(0, 95)">
+      <!-- Red Pin Icon -->
+      <path d="M 20,2 C 12,2 6,8 6,16 C 6,25 20,38 20,38 C 20,38 34,25 34,16 C 34,8 28,2 20,2 Z" fill="#ea4335"/>
+      <circle cx="20" cy="14" r="6" fill="#ffffff"/>
+      <text x="48" y="25" font-family="'Syne', 'Montserrat', sans-serif" font-size="23" font-weight="900" fill="#000000">Agoé plateau von en face de la station Yatt&amp;Co</text>
+    </g>
+  </g>
+
+
+  <!-- ================= RIGHT COLUMN: BIG CIRCULAR FRAME WITH EQUIPMENT & MERCHANDISE ================= -->
+  
+  <g transform="translate(560, 360)">
+    <!-- Big Circle Outer Ring with Gradient -->
+    <circle cx="230" cy="250" r="245" fill="none" stroke="url(#ringGrad)" stroke-width="18" filter="url(#dropShadow)"/>
+    <circle cx="230" cy="250" r="232" fill="#ffffff" />
+    
+    <!-- Clipping Path for Circle Content -->
+    <clipPath id="circleClip">
+      <circle cx="230" cy="250" r="230" />
+    </clipPath>
+
+    <g clip-path="url(#circleClip)">
+      <!-- Background of illustration -->
+      <rect x="-10" y="0" width="500" height="500" fill="#f8fafc" />
+
+      <!-- ================= 1. Industrial Plotter Machine (Top Area of Circle) ================= -->
+      <g transform="translate(30, 40)">
+        <!-- Plotter Stand and Body -->
+        <rect x="30" y="25" width="340" height="70" rx="8" fill="#1e293b"/>
+        <rect x="40" y="32" width="320" height="40" rx="4" fill="#334155"/>
+        
+        <!-- Plotter Roll Print Output (Rainbow Gradient Sheet) -->
+        <defs>
+          <linearGradient id="printWave" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#3b82f6"/>
+            <stop offset="25%" stop-color="#ec4899"/>
+            <stop offset="50%" stop-color="#eab308"/>
+            <stop offset="75%" stop-color="#22c55e"/>
+            <stop offset="100%" stop-color="#06b6d4"/>
+          </linearGradient>
+        </defs>
+        <path d="M 60,72 Q 130,95 200,80 Q 280,65 340,90 L 330,135 Q 260,110 190,125 Q 120,140 50,115 Z" fill="url(#printWave)" filter="url(#dropShadow)"/>
+
+        <!-- Plotter Metal Legs -->
+        <rect x="50" y="95" width="16" height="75" fill="#64748b"/>
+        <rect x="330" y="95" width="16" height="75" fill="#64748b"/>
+        <rect x="35" y="165" width="46" height="8" rx="3" fill="#334155"/>
+        <rect x="315" y="165" width="46" height="8" rx="3" fill="#334155"/>
+      </g>
+
+      <!-- ================= 2. Heat Press Machine (Middle Left of Circle) ================= -->
+      <g transform="translate(10, 180)">
+        <!-- Red Base of Heat Press -->
+        <rect x="15" y="100" width="100" height="25" rx="5" fill="#dc2626"/>
+        <!-- Black Top Heating Platen -->
+        <polygon points="10,65 110,40 115,70 15,95" fill="#1e293b" stroke="#475569" stroke-width="2"/>
+        <!-- Lever Handle -->
+        <line x1="30" y1="70" x2="10" y2="15" stroke="#0f172a" stroke-width="12" stroke-linecap="round"/>
+        <circle cx="10" cy="15" r="10" fill="#dc2626"/>
+        <line x1="60" y1="55" x2="60" y2="10" stroke="#64748b" stroke-width="8"/>
+      </g>
+
+      <!-- ================= 3. Business Cards & Stationery Stacks ================= -->
+      <g transform="translate(145, 180)">
+        <!-- Flyer Stack 1 -->
+        <polygon points="10,60 80,40 120,70 50,90" fill="#ffffff" stroke="#e2e8f0" stroke-width="2" filter="url(#dropShadow)"/>
+        <line x1="30" y1="60" x2="70" y2="50" stroke="#ee1c6e" stroke-width="3"/>
+        <line x1="35" y1="67" x2="85" y2="55" stroke="#1062a4" stroke-width="2"/>
+
+        <!-- Flyer Stack 2 -->
+        <polygon points="70,75 140,55 180,85 110,105" fill="#ffffff" stroke="#cbd5e1" stroke-width="2" filter="url(#dropShadow)"/>
+        <rect x="90" y="70" width="30" height="15" fill="#00a5df" transform="skewY(-15)"/>
+        
+        <!-- Envelopes & Flyers -->
+        <polygon points="120,110 195,95 215,130 140,145" fill="#fef08a" stroke="#eab308" stroke-width="1.5"/>
+      </g>
+
+      <!-- ================= 4. Personalized Ceramic Mugs (Bottom Center/Left) ================= -->
+      <g transform="translate(60, 310)">
+        <!-- Mug 1 (Atlas Logo) -->
+        <g transform="translate(30, 20)">
+          <rect x="0" y="0" width="55" height="60" rx="6" fill="#ffffff" stroke="#cbd5e1" stroke-width="2" filter="url(#dropShadow)"/>
+          <path d="M 55,12 Q 72,12 72,30 Q 72,48 55,48" fill="none" stroke="#cbd5e1" stroke-width="6"/>
+          <!-- Mug Graphic Design -->
+          <rect x="8" y="10" width="38" height="35" rx="3" fill="#1e3a8a"/>
+          <text x="27" y="32" font-family="'Syne', sans-serif" font-size="10" font-weight="900" fill="#ffffff" text-anchor="middle">ATLAS</text>
+        </g>
+
+        <!-- Mug 2 (Custom Photo) -->
+        <g transform="translate(95, 20)">
+          <rect x="0" y="0" width="55" height="60" rx="6" fill="#ffffff" stroke="#cbd5e1" stroke-width="2" filter="url(#dropShadow)"/>
+          <path d="M 55,12 Q 72,12 72,30 Q 72,48 55,48" fill="none" stroke="#cbd5e1" stroke-width="6"/>
+          <rect x="8" y="10" width="38" height="35" rx="3" fill="#f43f5e"/>
+          <circle cx="27" cy="27" r="12" fill="#fed7aa"/>
+        </g>
+
+        <!-- Row of smaller colorful mugs in front -->
+        <g transform="translate(0, 65)">
+          <rect x="15" y="0" width="35" height="38" rx="4" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5"/>
+          <rect x="55" y="0" width="35" height="38" rx="4" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5"/>
+          <rect x="95" y="0" width="35" height="38" rx="4" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5"/>
+          <rect x="135" y="0" width="35" height="38" rx="4" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5"/>
+        </g>
+      </g>
+
+      <!-- ================= 5. Sublimation Photo Frame (Bottom Right of Circle) ================= -->
+      <g transform="translate(230, 270)" filter="url(#dropShadow)">
+        <!-- Frame 1 (Vertical Canvas / Portrait) -->
+        <rect x="0" y="0" width="95" height="135" rx="10" fill="#0284c7" stroke="#ffffff" stroke-width="3"/>
+        <circle cx="47" cy="45" r="22" fill="#fed7aa"/>
+        <path d="M 25,85 Q 47,65 70,85 L 70,125 L 25,125 Z" fill="#ec4899"/>
+        <rect x="0" y="125" width="95" height="10" rx="3" fill="#0f172a" opacity="0.3"/>
+
+        <!-- Frame 2 (Couple / Family Portrait on Easel) -->
+        <g transform="translate(60, 45)">
+          <rect x="0" y="0" width="110" height="90" rx="8" fill="#ffffff" stroke="#f1f5f9" stroke-width="4"/>
+          <rect x="6" y="6" width="98" height="78" rx="4" fill="#f8fafc"/>
+          <!-- Two portrait silhouettes in white clothing -->
+          <circle cx="38" cy="38" r="14" fill="#d97706"/>
+          <circle cx="70" cy="44" r="13" fill="#b45309"/>
+          <path d="M 20,78 Q 38,55 55,78 Z" fill="#ffffff" stroke="#e2e8f0"/>
+          <path d="M 52,78 Q 70,60 88,78 Z" fill="#ffffff" stroke="#e2e8f0"/>
+        </g>
+      </g>
+
+      <!-- Faint "Eliano" Watermark in the corner -->
+      <text x="320" y="475" font-family="'Syne', cursive, sans-serif" font-size="42" font-weight="900" fill="#cbd5e1" opacity="0.4">Eliano</text>
+    </g>
+  </g>
+</svg>

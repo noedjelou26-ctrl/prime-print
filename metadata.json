@@ -1,0 +1,8 @@
+{
+  "name": "Eliano Prime Print",
+  "description": "Portfolio et services d'infographie et d'impression professionnelle par Eliano Prime Print à Lomé, Togo.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
